@@ -1,0 +1,22 @@
+Windows Command	MacOS/Linux Command	Description
+dir				ls			Lists the files in a current directory (by default the current directory)
+cd				cd			 the directory where commands are run
+move			mv			Moves a file to a new location (possibly with a new name)
+copy			cp			Copies a file
+del				rm			Deletes a file
+..				..			Move current directory back to parent directory
+md				mkdir		To create a directory
+type nul > furiosa.txt  	To creat a new empty file
+CLI	Command Line Interface, a text based interface for giving instructions to an operating system
+Directory					A location on your hard drive that can contain files and other directories
+Folder						Another name for directory
+Command						An action for the CLI to carry out
+Parameter					Additional information to modify the behavior of a command
+Terminal					Another name for a CLI
+Commit						A snapshot of the contents of one or more files
+Repo						A collection of commits
+Branch						A marker that points to a particular commit
+Remote						All the locations that contain copies of the repo that your local repo knows about
+Merge						Combining the contents of two branches together
+Origin						The location you cloned the repo from, typically GitHub or another server, this is a specific remote
+Local						The machine you are performing the Git operation on
