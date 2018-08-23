@@ -1,0 +1,40 @@
+form input {
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 2px 5px 2px rgb(233, 236, 28);
+    display: block;
+    width: 25%;
+}
+
+form textarea {
+    outline-width: 0;
+    border-style: none;
+}
+
+form div {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+h4 {
+    text-align: left;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 2px solid red;
+}
+
+input.ng-valid.ng-touched,
+textarea.ng-valid.ng-touched {
+    border-bottom: 2px solid green;
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid rgb(130, 12, 185);
+}
+
