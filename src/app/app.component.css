@@ -2,27 +2,6 @@
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
   }
-
-  img {
-    display: block;
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    box-shadow: 2px 5px 2px rgb(166, 166, 166);
-  }
-
-  app-skills {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-  }
-
-  app-greeting {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-  }
   
   p {
     font-family: 'Times New Roman', Times, serif;
@@ -57,3 +36,83 @@
     padding: 75px;
   }
 
+  #header {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #header img {
+    max-width: 300px;
+    border: 1px solid black;
+    box-shadow: 2px 5px 2px rgb(166, 166, 166);
+  }
+  
+  router-outlet {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .btn {
+    position: relative;
+    display: inline-block;
+    margin: 30px auto;
+    margin-left: 5px;
+    padding: 0.5%;
+  
+    overflow: hidden;
+  
+    border-width: 0;
+    outline: none;
+    border-radius: 1px;
+    border: 1px solid black;
+    box-shadow: 0px 3px 10px rgb(52, 30, 153);
+      
+    background-color: rgb(107, 243, 225);
+    color: #06171b;
+  
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background-color: #20d6f2;
+  }
+  
+  .btn > * {
+    position: relative;
+  }
+  
+  .btn span {
+    display: block;
+    padding: 12px 24px;
+  }
+  
+  .btn:before {
+    content: '';
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    display: block;
+    width: 0;
+    padding-top: 0;
+  
+    border-radius: 100%;
+  
+    background-color: rgba(236, 240, 241, 0.3);
+  
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn:active:before {
+    width: 120%;
+    padding-top: 120%;
+  
+    transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+  }
+
+  

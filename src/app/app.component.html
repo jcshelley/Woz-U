@@ -1,17 +1,24 @@
+  <div id="header">
+    <nav>
+      <a class="btn" routerLink="greeting" routerLinkActive="active">Home</a>
+      <a class="btn" routerLink="skills" routerLinkActive="active">My Skills</a>
+      <a class="btn" routerlink="skills-details, skills-details/:id" routerLinkActive='active'>My Skill Levels</a>
+      <a class="btn" routerLink="contacts" routerLinkActive="active">My Contacts</a>
+      <a class="btn" routerLink="phonebook" routerLinkActive="active">Phone Book Entry</a>
+      <a class="btn" routerLink="contact" routerLinkActive="active">Contact Me</a>
+    </nav>
   <h1>Welcome to {{ title }}'s Portfolio Page!</h1>
-  <img alt="JohnShelleyJr" src="../assets/images/JohnShelleyJr.jpg">
-  <app-greeting></app-greeting>
-  <app-skills></app-skills>
-  <app-contact-form></app-contact-form>
-  <h1>I live in {{city}}, Arizona.</h1>
-<div id = "content">
-  <div class = "row">
-    <p id = "p1">My coworkers call me "{{tagLine}}" because I provision, install, and maintain their phones.</p><br>
   </div>
+  <router-outlet></router-outlet>
+    <h1>I live in {{city}}, Arizona.</h1>
+    <div id = "content">
+      <div class = "row">
+        <p id = "p1">My coworkers call me "{{tagLine}}" because I provision, install, and maintain their phones.</p><br>
+    </div>
     <div class = "row1">
-    <p>A little bit about my career. {{aboutMe}}</p>
+      <p>A little bit about my career. {{aboutMe}}</p>
+    </div>
   </div>
-</div>
-<app-phone-book-form></app-phone-book-form>
-<app-contacts-component></app-contacts-component>
+
+
 

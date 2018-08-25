@@ -1,0 +1,23 @@
+<h4>Contact Form</h4>
+<p>Please complete the form below and Submit. I will reach out as soon as possible. Thank you!</p>
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" placeholder="Name" name="name" required [(ngModel)]="model.name">
+  </div>
+  <div>
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Email" name="email" email required [(ngModel)]="model.email">
+  </div>
+  <div>
+      <label for="subject">Subject:</label>
+      <input type="text" placeholder="Subject" name="subject" required [(ngModel)]="model.subject">
+  </div>
+  <div>
+      <label for="message">Message:</label>
+      <textarea type="text" placeholder="Message" name="message" required [(ngModel)]="model.message"></textarea>
+  </div>
+  <div>
+      <button type="submit">Submit</button>
+  </div>
+</form>

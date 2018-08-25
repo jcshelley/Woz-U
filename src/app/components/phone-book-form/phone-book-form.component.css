@@ -1,0 +1,48 @@
+form input {
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 2px 5px 2px rgb(233, 236, 28);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+form textarea {
+    outline-width: 0;
+    border-style: none;
+}
+
+form div {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 2px solid red;
+}
+
+input.ng-valid.ng-touched,
+textarea.ng-valid.ng-touched {
+    border-bottom: 2px solid green;
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid rgb(130, 12, 185);
+}
+
